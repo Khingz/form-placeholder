@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/code.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.body{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vh;
+    padding: 70px;
+    background: #000;
+    opacity: 0.9;
+    box-sizing: border-box;
+    box-shadow: 1px 15px 30px #000;
+    border-radius: 5px;
+}
+
+.box h1 {
+    padding: 5px;
+    color: #5091E8;
+    text-align: center;
+}
+
+.box .input{
+    position: relative;
+}
+.box .input input{
+    width: 100%;
+    padding: 13px;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    letter-spacing: 2px;
+}
+
+.box .input label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.box .input input:focus ~ label,
+.box .input input:valid ~ label {
+    top: -27px;
+    color: #5091E8;
+    background: black;
+    left: 10px;
+}
+
+.box .input input:focus,
+.box .input input:valid {
+    border: 2px solid #5091e8;
+}
+
+input[type="submit"] {
+    padding: 10px 40px;
+    color: #fff;
+    background: #5091e8;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.7;
+}
+
+/* Javascript classes */
+.error {
+    color: white;
+    background:orangered;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.add {
+    position: relative;
+    height: auto;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vh;
+    padding: 15px;
+    background: #000;
+    opacity: 0.9;
+    box-sizing: border-box;
+    box-shadow: 1px 15px 30px #000;
+    border-radius: 5px;
+    margin-top: -80px;
+}
+
+.add li{
+    padding: 5px;
+    color:#5091e8;
+    list-style: none;
+    font-weight: lighter;
+    font-size: 15px;
+    box-sizing: border-box;
+}
